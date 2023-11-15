@@ -1,0 +1,164 @@
+.aj-navbar
+{
+/*
+* Created with https://www.css-gradient.com
+* Gradient link: https://www.css-gradient.com/?c1=e5d594&c2=0c4d3c&gt=l&gd=dcl
+*/
+background: #E5D594;
+background: linear-gradient(90deg, #0a0d0c, #0b0a05);
+}   
+
+/* Apply a background color and set font styles */
+body {
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Style the logo in the navigation bar */
+.navbar-brand img {
+    width: 60px;
+    height: 50px;
+}
+
+/* Style the container for bus information */
+.container {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #6b7d8d;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the bus travel rows */
+.screen-bus_travels-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+/* Style each bus travel column */
+.screen-bus_travels-col {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    flex-basis: calc(33.33% - 20px);
+}
+
+/* Style the bus name and type */
+.screen-bus_name {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.screen-bys_type {
+    font-size: 16px;
+    color: #777;
+}
+
+/* Style the bus time and seat information */
+.screen-bus_time {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.screen-bus_start,
+.screen-bus_end {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+.screen-bus_time-arrow-wrap {
+    margin: 0 10px;
+}
+
+.screen-bus_hrs {
+    font-size: 14px;
+    color: #777;
+}
+
+.screen-bus_seat-wrap {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #333;
+}
+
+/* Style the bus rating and price */
+.screen-bus_rating-price {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Style the bus price */
+.screen-bus_price {
+    font-size: 24px;
+    font-weight: bold;
+    color: #007bff;
+}
+
+/* Add styles for responsiveness on smaller screens */
+@media (max-width: 768px) {
+    .screen-bus_travels-row {
+        flex-direction: column;
+    }
+    .screen-bus_travels-col {
+        margin-bottom: 10px;
+        flex-basis: 100%;
+    }
+}
+/* Style the button with a gradient background */
+.btn-gradient {
+    background: linear-gradient(45deg, #007bff, #00ff00); /* Change the gradient colors as needed */
+    border: none;
+    text-align: center;
+    color: #fff;
+    padding: 20px 20px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+/* Style the button text */
+.btn-gradient a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.col {
+    flex-basis: calc(33.33% - 20px);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+
+.left-column {
+    /* Style for the left column with scrolling videos */
+    /* Add your styles here */
+    background-color: #007bff;
+}
+
+.center-column {
+    /* Style for the center column containing bus routes */
+    /* Add your styles here */
+    background-color: #c01b1b;
+}
+
+.right-column {
+    /* Style for the right column with ads */
+    /* Add your styles here */
+    background-color: #007bff;
+}
+

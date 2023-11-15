@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>INDEX PAGE</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+</head>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 0;
+  }
+
+  body {
+    background: #131416;
+  }
+
+  /* Your existing CSS for cards */
+  @media (min-width: 540px) {
+    .cards {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (min-width: 960px) {
+    .cards {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    .cards a {
+      text-decoration: none;
+      border: none;
+    }
+
+    .cards {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      margin: 0 90px;
+    }
+
+    .custom-card {
+      text-align: center;
+      text-decoration: none;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+      padding: 10px;
+      height: 450px;
+      margin: 10px;
+      width: 100%;
+      transition: transform 0.2s ease-in-out;
+      border-radius: 24px;
+    }
+
+    .card-background {
+      background-size: cover;
+      background-position: center;
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      border-radius: 24px;
+      filter: brightness(0.75) saturate(1.2) contrast(0.85);
+      transition: .3s;
+    }
+
+    .card-content {
+      position: relative;
+      padding: 24px;
+      font-family: arial, sans-serif;
+      color: white;
+      border: 2px solid transparent;
+
+    }
+
+    .card-content p {
+      color: rgba(255, 255, 255, 0.6);
+      margin-bottom: 10px;
+      text-transform: uppercase;
+      font-size: 0.9rem;
+    }
+
+    .card-content h3 {
+      font-size: 1.9rem;
+      color: rgba(255, 255, 255, 0.9);
+      text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .custom-card:hover .card-background {
+      transform: scale(1.05);
+      filter: brightness(0.75) saturate(1.2) contrast(0.85);
+    }
+
+    .cards:hover .custom-card:not(:hover) .card-background {
+      filter: blur(20px);
+    }
+
+    .custom-card:hover .card-content {
+      border: 0.5px solid white;
+      border-radius: 25px;
+      backdrop-filter: blur(10px);
+    }
+  }
+
+  /* Navbar styling */
+  .navbar {
+    background: rgb(6, 1, 1);
+    /* Set the background color to a dark color */
+  }
+
+  /* Login and Register links in the navbar */
+  .navbar .nav-item {
+    color: rgb(249, 249, 248);
+    font-weight: bold;
+    /* Make the text bold */
+    font-size: 16px;
+    /* Adjust the font size as needed */
+  }
+
+  /* Login and Register box background */
+  .navbar .nav-item {
+    background: #fff;
+    /* Set the background color to white */
+  }
+
+  body {
+    background-image: url('./assets/colorful-smoke-cloud-with-dark-background_1340-45797.jpg');
+    background-size: cover;
+  }
+
+  .box {
+    /* Add background image for each facility here */
+    background-size: cover;
+    color: rgb(2, 5, 12);
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px;
+  }
+
+  .box:nth-child(1) {
+    background-image: url('./assets/food.jpg');
+  }
+
+  .box:nth-child(2) {
+    background-image: url('./assets/snacks.jpg');
+  }
+
+  .box:nth-child(3) {
+    background-image: url('./assets/first-aid kit.jpg');
+  }
+
+  /* Add a background box with transparency for facility titles */
+  body {
+    background-image: url('./assets/colorful-smoke-cloud-with-dark-background_1340-45797.jpg');
+    background-size: cover;
+  }
+
+  .box {
+    /* Add background image for each facility here */
+    background-size: cover;
+    color: rgb(2, 5, 12);
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px;
+  }
+
+  .box:nth-child(1) {
+    background-image: url('./assets/food.jpg');
+  }
+
+  .box:nth-child(2) {
+    background-image: url('./assets/snacks.jpg');
+  }
+
+  .box:nth-child(3) {
+    background-image: url('./assets/medikit.jpg');
+  }
+
+  /* Add a background box with transparency for facility titles */
+  .facility-title {
+    background: rgba(255, 255, 255, 0.6);
+    /* Adjust the transparency by changing the last value (0.6) */
+    padding: 5px;
+    border-radius: 5px;
+    display: inline;
+    color: #0c0404;
+    /* Set text color to white */
+
+  }
+
+  .box .facility-title {
+    font-weight: bold;
+    /* Make the facility titles bold */
+  }
+
+  /* Facility box button styling */
+  .box button {
+    background: orange;
+    /* Change the button background color to orange */
+    color: #fff;
+    /* Set text color to white */
+  }
+
+  /* Facility box button on hover */
+  .box button:hover {
+    background: none;
+    background: rgba(223, 70, 15, 0.856);
+    color: #fff;
+  }
+
+  /* Customize the footer background */
+  .footer-text {
+    color: white;
+  }
+
+  /* Customize the footer background */
+  .footer-text {
+    color: white;
+  }
+
+  .gray-bg {
+    background-color: #545b62;
+    padding: 20px;
+    border-radius: 5px;
+  }
+</style>
+
+<body>
+  <div class="container-fluid p-0 m-0">
+    <div class="aj-navbar">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">
+          <img src="./assets/logo.png" alt="" width="60px" height="50px">
+        </a>
+        <div class="navbar ">
+          <h1>Ticketing System</h1>
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mr-auto">
+
+            </ul>
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link text-bold" href="user_registration.php">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="user_registration.php">Register</a>
+
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <div class="container">
+      <div class="row cards text-center">
+        <div class="col-4">
+          <a href="#" class="card custom-card">
+            <div class="card-background"
+              style="background-image: url(https://img.freepik.com/premium-photo/bus-with-bright-neon-light-rides-along-city-streetgenerative-ai_391052-11683.jpg?w=740)">
+            </div>
+            <div class="card-content">
+              <p>BOOK</p>
+              <h3>A BUS TICKET</h3>
+            </div>
+          </a>
+        </div>
+        <div class="col-4">
+          <a href="#" class="card custom-card">
+            <div class="card-background"
+              style="background-image: url(https://img.freepik.com/premium-photo/modern-highspeed-train-generative-ai_220873-16149.jpg?w=900)">
+            </div>
+            <div class="card-content">
+              <p>BOOK</p>
+              <h3>TRAIN TICKET</h3>
+            </div>
+          </a>
+        </div>
+        <div class="col-4">
+          <a href="#" class="card custom-card">
+            <div class="card-background"
+              style="background-image: url(https://img.freepik.com/free-photo/jumbo-jet-flying-sky_23-2150895671.jpg)">
+            </div>
+            <div class="card-content">
+              <p>BOOK</p>
+              <h3>FLIGHT TICKET</h3>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <section class="main">
+      <section class="main-Facilities">
+        <h1>Facilities</h1>
+        <div class="Facilities-box">
+          <ul>
+            <li class="active"></li>
+          </ul>
+          <div class="Facilities gray-bg">
+            <div class="box gray-bg">
+              <a href="./user_registration.php">
+                <div class="facility-title">Free Food</div>
+                <p></p>
+                <button>continue</button>
+                <i class="fab fa-html5 html"></i>
+              </a>
+            </div>
+            <div class="box">
+              <a href="./user_registration.php">
+                <div class="facility-title">Free Snacks</div>
+                <p></p>
+                <button>continue</button>
+                <i class="fab fa-css3-alt css"></i>
+              </a>
+            </div>
+            <div class="box">
+              <a href="./user_registration.php">
+                <div class="facility-title">Emergency Facilities</div>
+                <p></p>
+                <button>continue</button>
+                <i class="fab fa-js-square js"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+    <!-- Grid container -->
+    <div class="text-center p-3" style="background: #E5D594;
+              background: linear-gradient(90deg,  #050406, #090e0f);">
+      <a class="text-white" href="./user registration.html">THIS PROJECT IS DONE BY AJAY</a>
+    </div>
+    </a>
+    </footer>
+  </div>
+</body>
+</div>
+<footer class="bg-light text-center text-white">
+
+
+</html>

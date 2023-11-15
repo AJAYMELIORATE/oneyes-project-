@@ -1,0 +1,185 @@
+.aj-navbar
+{
+
+background: #E5D594;
+background: linear-gradient(90deg, #000000, #000000);
+}
+.navbar {
+    background-color: black;
+}
+.navbar h1 {
+    color: white;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700");
+*{
+ 
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.container{
+    display: center;
+    text-align: center
+
+  }
+
+
+  #main-content h3{
+      padding-left: 1rem;
+      margin-bottom: 50;
+      text-transform: uppercase;
+  }
+
+  #status, #user, #admin{
+      display: flex;
+      flex-wrap: wrap;
+  }
+
+  .info-box{
+      padding: 0.3rem 1rem;
+      border-left: 4px solid;
+      margin: 1rem;
+      flex-basis: 45%;
+      border-radius: 5px;
+      box-shadow: 7px 7px 4px rgba(153, 209, 64, 0.25);
+      background-color: #3d4e62b3;
+      text-align: center
+
+  }
+
+  .heading{
+      display: flex;
+      justify-content: space-between;
+  }
+  .heading h5{
+      color: white;
+      text-align: center;
+      padding: 0.5rem 1rem;
+      flex-basis: 70%;
+      border-radius: 0px;
+      margin: 0.5rem 0;
+  }
+
+  .info-box p{
+      margin: 0;
+  }
+
+  .info-content{
+      margin-bottom: 1rem;
+  }
+
+  .info-content .num{
+      font-size: 1.5rem;
+  }
+
+  .info-box a{
+      display: block;
+      text-align: right;
+      text-decoration: none;
+      font-weight: bold;
+      text-align: center
+
+  }
+  #Booking{
+      border-color:#478dd2;
+  }
+
+  #Booking h5{
+      background-color: #478dd2;
+  }
+  #Booking a{
+      color: #478dd2;
+  }
+
+  #Bus {
+      border-color: #009688;
+  }
+
+  #Bus h5{
+      background-color: #009688;
+  }
+
+  #Bus a{
+      color: #009688;
+  }
+
+  #Route{
+      border-color: #f44336;
+  }
+
+  #Route h5{
+      background-color: #f44336;
+  }
+
+  #Route a{
+      color: #f44336;
+  }
+
+  
+
+  #Customer{
+      border-color: #545b62;
+  }
+
+  #Customer h5{
+      background-color: #545b62;
+  }
+
+  #Customer a{
+      color: #545b62;
+  }
+
+  #Admin{
+      border-color: #607d8b;
+  }
+
+  #Admin h5{
+      background-color: #607d8b;
+  }
+
+  #Earning h5{
+      background-color: #23bf29;
+  }
+
+  #Admin a{
+      color: #607d8b;
+  }
+  /* END-hardcoding */
+
+
+  #admin .info-box{
+      text-align: center;
+      padding: 1rem 0;
+      border: none;
+  }
+
+  #admin h4{
+      margin: 0.5rem 0;
+  }
+
+  #admin img{
+      border-radius: 50%;
+  }
+
+
+  @media only screen and (min-width:1000px){
+      #main-content{
+          flex-grow: 1;
+      }
+
+      .info-box{
+          flex-basis: 20%;
+      }
+
+      #admin .info-box{
+          flex-basis: 15%;
+      }
+  }
+  .nav-item
+  {
+    background-color: blue;
+  }
+
+  
+  

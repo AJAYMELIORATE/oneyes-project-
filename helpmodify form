@@ -1,0 +1,58 @@
+<?php
+session_start();
+if(isset($_SESSION["user_email"]) && isset($_SESSION["user_phone"])){
+
+?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ChatRoom</title>
+  <link rel="stylesheet" href="help.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+</head>
+
+<body>
+<div class="container">
+    <nav>
+      <ul>
+        <li><a href="#" class="logo">
+          <img src="./assets/logo.png" alt="">
+          <span class="nav-item">DashBoard</span>
+        </a></li>
+        <li><a href="./user dashboard.html">
+          <i class="fas fa-home"></i>
+          <span class="nav-item">Home</span>
+        </a></li>
+        <li><a href="create_ticket.html">
+          <i class="fas fa-question-circle"></i>
+          <span class="nav-item">Create Ticket</span>
+        </a></li>
+        <li><a href="./index.html" class="logout">
+          <i class="fas fa-sign-out-alt"></i>
+          <span class="nav-item">Log out</span>
+        </a></li>
+      </ul>
+    </nav>
+  <div class="chat">
+    <h2>Welcome  <span><?= $_SESSION["user_email"]?></span></h2>
+    <div class="msg">
+    </div>
+    <div class="input_msg">
+      <input type="text" placeholder="We are Here for you" id="input_msg">
+      <button onclick="sendMessage()">Send</button>
+    </div>
+  </div>
+</body>
+<script src="helpscript.js"></script>
+
+</html>
+
+<?php
+}else{
+
+  header("location: VS-LOG IN PAGE.html"); 
+}
+?>

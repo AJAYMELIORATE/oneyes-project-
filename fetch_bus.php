@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="./user_profile.css">
+
+    <!-- FontAwesome 5 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar top -->
+    <div class="navbar-top">
+        <div class="title">
+            <h1>User - Profile</h1>
+        </div>     
+    </div>
+    <!-- End -->
+
+    <!-- Sidenav -->
+    <div class="sidenav">
+        <div class="profile">
+            <img src="./assets/logo.png" alt="" width="100" height="100">
+            <div class="url">
+                <a href="./admin_dashboard.html">Dashboard</a>
+                
+            </div>            
+        </div>
+
+        <div class="sidenav-url">
+            <div class="url">
+                <a href="#" class="active">Bus_Details</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="main">
+        <h2>IDENTITY</h2>
+        <div class="card">
+            <div class="card-body">
+                <i class="fa fa-pen fa-xs edit"></i>
+                <form action = "checkinfo.php" method="post" >
+                    <div class="form-row">
+                    <?php
+                        session_start();
+                    ?>                                    
+                        <div class="form-group col-md-12">
+                            <input type="text" class="form-control" id="inputname" placeholder="Name" value="<?php echo $_SESSION['user_name']; ?>">
+                        </div>
+                        <div class="form-group col-md-12">
+                            <input type="email" class="form-control" id="inputEmail" placeholder="Email" value="<?php echo $_SESSION['user_email'];?>">
+                        </div>
+                        <div class="form-group col-md-12">
+                            <input type="text" class="form-control" id="inputPhone" placeholder="phone" value="<?php echo $_SESSION['user_phone'];?>">
+                          </div>
+                        </div>
+                        <div class="form-group col-md-12">
+                            <input type="text" class="form-control" id="inputPhone" placeholder="Create Password" value="<?php echo $_SESSION['user_password'];?>">
+                        </div>
+                        <button>Update</button>
+                        </div>
+                  </form>
+            </div>
+        </div>
+
+        <h2>SOCIAL MEDIA</h2>
+        <div class="card">
+            <div class="card-body">
+                <i class="fa fa-pen fa-xs edit" ></i>
+                <div class="social-media">
+                    <span class="fa-stack fa-sm">
+                        <i class="fas fa-circle fa-stack-2x"></i>
+                        <i class="fab fa-facebook fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <span class="fa-stack fa-sm">
+                        <i class="fas fa-circle fa-stack-2x"></i>
+                        <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <span class="fa-stack fa-sm">
+                        <i class="fas fa-circle fa-stack-2x"></i>
+                        <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <span class="fa-stack fa-sm">
+                        <i class="fas fa-circle fa-stack-2x"></i>
+                        <i class="fab fa-invision fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <span class="fa-stack fa-sm">
+                        <i class="fas fa-circle fa-stack-2x"></i>
+                        <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <span class="fa-stack fa-sm">
+                        <i class="fas fa-circle fa-stack-2x"></i>
+                        <i class="fab fa-whatsapp fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <span class="fa-stack fa-sm">
+                        <i class="fas fa-circle fa-stack-2x"></i>
+                        <i class="fab fa-snapchat fa-stack-1x fa-inverse"></i>
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

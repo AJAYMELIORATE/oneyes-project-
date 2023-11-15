@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Seat Selection Page</title>
+  <style>
+    
+    body {
+      background-image: url('./assets/aeroplane\ image-gradient.jpg');
+      background-size: cover; /* Adjust this property based on your preference */
+      background-repeat: no-repeat;
+    }
+    .book-ticket-button {
+      background-color: #cca91b; /* Background color for the button */
+      color: white; /* Text color for the button */
+      padding: 15px 30px; /* Adjust padding as needed */
+      font-size: 18px; /* Adjust font size as needed */
+      border: none;
+      cursor: pointer;
+    }
+    #total-price {
+      background-color: #333; /* Background color for the total price box */
+      color: white; /* Text color for the total price */
+      padding: 10px; /* Adjust padding as needed */
+      text-align: center; /* Center-align the text */
+      font-size: 18px; /* Adjust font size as needed */
+      border-radius: 5px; /* Rounded corners for the box */
+      margin-top: 20px; /* Margin from the top */
+    }
+    .button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 20px; /* Adjust margin as needed */
+}
+  </style>
+</head>
+<body>
+
+  <div class="aj-navbar">
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">
+            <img src="./assets/logo.png" alt="" width="100px" height="90px">   
+        </a>
+        <a class="text-white">THIS PROJECT IS DONE BY AJAY</a>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mr-auto">
+                    
+                </ul>
+                <ul class="navbar-nav">
+                </ul>
+            </div>
+        </div>
+    </nav>       
+</div>
+  <div class="plane">
+    <h1>SELECT THE SEATS</h1>
+    <div class="fuselage">
+      <ol class="cabin fuselage">
+        <li class="row row--1">
+          <ol class="seats" type="A">
+            <li class="seat" data-gender="male">
+              <input type="checkbox" id="1A" />
+              <label for="1A">1A</label>
+            </li>
+            <li class="seat" data-gender="female">
+              <input type="checkbox" id="1B" />
+              <label for="1B">1B</label>
+            </li>
+            <li class="seat">
+                <input type="checkbox" id="1C" />
+                <label for="1C">1C</label>
+              </li>
+              <li class="seat">
+                <input type="checkbox" disabled id="1D" />
+                <label for="1D">1D</label>
+              </li>
+              <li class="seat">
+                <input type="checkbox" id="1E" />
+                <label for="1E">1E</label>
+              </li>
+              
+            </ol>
+          </li>
+          <li class="row row--2">
+            <ol class="seats" type="A">
+              <li class="seat">
+                <input type="checkbox" id="2A" />
+                <label for="2A">2A</label>
+              </li>
+              <li class="seat">
+                <input type="checkbox" id="2B" />
+                <label for="2B">2B</label>
+              </li>
+              <li class="seat">
+                <input type="checkbox" id="2C" />
+                <label for="2C">2C</label>
+              </li>
+              <li class="seat">
+                <input type="checkbox" id="2D" />
+                <label for="2D">2D</label>
+              </li>
+              <li class="seat">
+                <input type="checkbox" id="2E" />
+                <label for="2E">2E</label>
+              </li>
+              
+            </ol>
+          </li>
+          <li class="row row--3">
+            <ol class="seats" type="A">
+              <li class="seat">
+                <input type="checkbox" id="3A" />
+                <label for="3A">3A</label>
+              </li>
+              <li class="seat">
+                <input type="checkbox" id="3B" />
+                <label for="3B">3B</label>
+              </li>
+              <li class="seat">
+                <input type="checkbox" id="3C" />
+                <label for="3C">3C</label>
+              </li>
+              <li class="seat">
+                <input type="checkbox" id="3D" />
+                <label for="3D">3D</label>
+              </li>
+              <li class="seat">
+                <input type="checkbox" id="3E" />
+                <label for="3E">3E</label>
+              </li>
+              
+            </ol>
+          </li>
+          <li class="row row--4">
+            <ol class="seats" type="A">
+              <li class="seat">
+                <input type="checkbox" id="4A" />
+                <label for="4A">4A</label>
+              </li>
+              <li class="seat">
+                <input type="checkbox" id="4B" />
+                <label for="4B">4B</label>
+              </li>
+              <li class="seat">
+                <input type="checkbox" id="4C" />
+                <label for="4C">4C</label>
+              </li>
+              <li class="seat">
+                <input type="checkbox" id="4D" />
+                <label for="4D">4D</label>
+              </li>
+              <li class="seat">
+                <input type="checkbox" id="4E" />
+                <label for="4E">4E</label>
+              </li>
+              
+            </ol>
+          </li>
+          <li class="row row--5">
+            <ol class="seats" type="A">
+              <li class="seat">
+                <input type="checkbox" id="5A" />
+                <label for="5A">5A</label>
+              </li>
+              <li class="seat">
+                <input type="checkbox" id="5B" />
+                <label for="5B">5B</label>
+              </li>
+              <li class="seat">
+                <input type="checkbox" id="5C" />
+                <label for="5C">5C</label>
+              </li>
+              <li class="seat">
+                <input type="checkbox" id="5D" />
+                <label for="5D">5D</label>
+              </li>
+              <li class="seat">
+                <input type="checkbox" id="5E" />
+                <label for="5E">5E</label>
+              </li>
+              
+            </ol>
+          </li>
+          <li class="row row--6">
+            <ol class="seats" type="A">
+              <li class="seat">
+                <input type="checkbox" id="6A" />
+                <label for="6A">6A</label>
+              </li>
+              <li class="seat">
+                <input type="checkbox" id="6B" />
+                <label for="6B">6B</label>
+              </li>
+              <li class="seat">
+                <input type="checkbox" id="6C" />
+                <label for="6C">6C</label>
+              </li>
+              <li class="seat">
+                <input type="checkbox" id="6D" />
+                <label for="6D">6D</label>
+              </li>
+              <li class="seat">
+                <input type="checkbox" id="6E" />
+                <label for="6E">6E</label>
+              </li>
+              
+            </ol>
+          </li>
+          <li class="row row--7">
+            <ol class="seats" type="A">
+              <li class="seat">
+                <input type="checkbox" id="7A" />
+                <label for="7A">7A</label>
+              </li>
+              <li class="seat">
+                <input type="checkbox" id="7B" />
+                <label for="7B">7B</label>
+              </li>
+              <li class="seat">
+                <input type="checkbox" id="7C" />
+                <label for="7C">7C</label>
+              </li>
+              <li class="seat">
+                <input type="checkbox" id="7D" />
+                <label for="7D">7D</label>
+              </li>
+              <li class="seat">
+                <input type="checkbox" id="7E" />
+                <label for="7E">7E</label>
+              </li>
+              
+            </ol>
+          </li>
+          <li class="row row--8">
+            <ol class="seats" type="A">
+              <li class="seat">
+                <input type="checkbox" id="8A" />
+                <label for="8A">8A</label>
+              </li>
+              <li class="seat">
+                <input type="checkbox" id="8B" />
+                <label for="8B">8B</label>
+              </li>
+              <li class="seat">
+                <input type="checkbox" id="8C" />
+                <label for="8C">8C</label>
+              </li>
+              <li class="seat">
+                <input type="checkbox" id="8D" />
+                <label for="8D">8D</label>
+              </li>
+              <li class="seat">
+                <input type="checkbox" id="8E" />
+                <label for="8E">8E</label>
+              </li>
+
+            </ol>
+          </li>
+    </div>
+    <div class="fuselage">
+
+    </div>
+  </div>
+  <div id="total-price">Total Price: $0</div>
+
+  <div class="button-container">
+    <button id="proceed-to-payment" class="book-ticket-button">Proceed to Payment</button>
+  </div>
+  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  
+  <script>
+    // Your existing JavaScript code for seat selection
+    const seatCheckboxes = document.querySelectorAll(".seat input[type='checkbox']");
+    const price = parseFloat(new URLSearchParams(window.location.search).get("price"));
+    const totalPriceDisplay = document.getElementById("total-price");
+    const proceedButton = document.getElementById("proceed-to-payment");
+  
+    let selectedSeats = 0;
+  
+    seatCheckboxes.forEach((checkbox) => {
+      checkbox.addEventListener("change", () => {
+        if (checkbox.checked) {
+          selectedSeats++;
+        } else {
+          selectedSeats--;
+        }
+  
+        // Calculate total price
+        const total = selectedSeats * price;
+        totalPriceDisplay.textContent = `Total Price: $${total}`;
+  
+        // Enable "Proceed to Payment" button if seats are selected
+        proceedButton.disabled = selectedSeats === 0;
+      });
+    });
+  
+    // Function to initiate Razorpay payment and always redirect to success.html
+    function initiateRazorpayPayment() {
+      // Check if any seat is selected
+      if (selectedSeats === 0) {
+        alert('Please select at least one seat before proceeding to payment.');
+        return;
+      }
+  
+      // Calculate the total price
+      var totalAmount = selectedSeats * price;
+  
+      var options = {
+        "key": "rzp_test_QGKRejoCMO8Rjf",
+        "amount": (totalAmount * 100), // Multiply by 100 to convert to paise
+        "name": "AJ-Travels",
+        "description": "Payment",
+        "handler": function (response) {
+          // Always redirect to success.html, regardless of payment status
+          window.location.href = 'ticket_info_air.php';
+        },
+        "theme": {
+          "color": "#528FF0"
+        }
+      };
+  
+      var rzp1 = new Razorpay(options);
+      rzp1.open();
+    }
+  
+    // Add an event listener to the button
+    proceedButton.addEventListener('click', initiateRazorpayPayment);
+  </script>
+  
+  </body>
+  </html>

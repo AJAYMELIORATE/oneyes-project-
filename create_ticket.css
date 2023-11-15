@@ -1,0 +1,96 @@
+
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 15px 30px;
+    font-size: 17px;
+    padding: 8px;
+}
+nav{
+    background: #E5D594;
+    background: linear-gradient(90deg,#5abdcd);    border-radius: 4px;
+    margin-top: 8px;
+    padding-top: 8px;
+}
+h1{
+    text-align: center;
+    font-weight: bolder;
+    font-size: xx-large;
+    text-decoration: underline;
+    
+}
+h1+p{
+    color: cornsilk;
+    font-style: italic;
+    margin: 14px;
+    padding: 4px;
+}
+.required{
+    color: red;
+    font-style: italic;
+    margin: 14px;
+    margin-bottom: 4px;
+    padding: 4px;
+}
+.container{
+    background-color: whitesmoke;
+    padding: 5px 2px 15px 20px;
+    border: 2px solid #cd9999;
+    border-radius: 100px;
+}
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="date"],
+input[type="password"],
+select,
+textarea{
+    width: 95%;
+    padding: 8px;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin: 10px
+}
+fieldset{
+    border: 1px solid white;
+    background-color: white;
+    width: 95%;
+    padding: 12px;
+    border-radius: 5px;
+    margin: 10px
+}
+input[type="range"]{
+    padding: 6px;
+    margin: 8px
+}
+input[type="checkbox"]{
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 5px;
+}
+input[type="submit"]{
+    background-color: purple;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    color: white;
+}
+input[type="submit"]:hover{
+    background-color: blue;
+}
+input[type="search"]{
+    border: 1px solid white;
+    background-color: white;
+    border-radius: 5px;
+}
+.revert{
+    text-align: center;
+    font-weight: bolder;
+    font-size: xx-large;
+    font-style: italic;
+    font-family: 'Courier New', Courier, monospace;
+}
