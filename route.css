@@ -40,10 +40,10 @@ body {
 
 /* Style each bus travel column */
 .screen-bus_travels-col {
-    background-color: #fff;
+    background-color: #f3f0f0;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 5px rgba(255, 253, 253, 0.1);
     flex-basis: calc(33.33% - 20px);
 }
 
@@ -51,12 +51,12 @@ body {
 .screen-bus_name {
     font-size: 24px;
     font-weight: bold;
-    color: #333;
+    color: #f8f7f7;
 }
 
 .screen-bys_type {
     font-size: 16px;
-    color: #777;
+    color: #e6e6e6;
 }
 
 /* Style the bus time and seat information */
@@ -70,7 +70,7 @@ body {
 .screen-bus_end {
     font-size: 20px;
     font-weight: bold;
-    color: #333;
+    color: #ffffff;
 }
 
 .screen-bus_time-arrow-wrap {
@@ -79,13 +79,13 @@ body {
 
 .screen-bus_hrs {
     font-size: 14px;
-    color: #777;
+    color: #fffefe;
 }
 
 .screen-bus_seat-wrap {
     margin-top: 10px;
     font-size: 14px;
-    color: #333;
+    color: #ffffff;
 }
 
 /* Style the bus rating and price */
